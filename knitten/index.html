@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knitten</title>
+    <link rel="stylesheet" href="knitten.css">
+    <script src="knitten.js"></script>
+</head>
+<body>
+    <h1>Knitten</h1>
+    <h2 id="score">0</h2>
+    <div id="board-container">
+        <div id="board"></div>
+        <div class="controls">
+            <button class="control-btn" data-direction="left" data-row="0">←</button>
+            <button class="control-btn" data-direction="left" data-row="1">←</button>
+            <button class="control-btn" data-direction="left" data-row="2">←</button>
+            <button class="control-btn" data-direction="right" data-row="0">→</button>
+            <button class="control-btn" data-direction="right" data-row="1">→</button>
+            <button class="control-btn" data-direction="right" data-row="2">→</button>
+            <button class="control-btn" data-direction="up" data-col="0">↑</button>
+            <button class="control-btn" data-direction="up" data-col="1">↑</button>
+            <button class="control-btn" data-direction="up" data-col="2">↑</button>
+            <button class="control-btn" data-direction="down" data-col="0">↓</button>
+            <button class="control-btn" data-direction="down" data-col="1">↓</button>
+            <button class="control-btn" data-direction="down" data-col="2">↓</button>
+        </div>
+    </div>
+    <button id="draw-card-btn">Draw Card</button>
+    <button id="draw-yarn-btn">Draw Yarn</button>
+    <div id="drawn-yarn-container"></div>
+    <div id="player1-hand" class="player-hand"></div>
+    <div id="player2-hand" class="player-hand"></div>
+</body>
+</html>

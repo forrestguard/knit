@@ -1,0 +1,243 @@
+/* knitten.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#board-container {
+    position: relative;
+    display: inline-block;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    width: max-content;
+    background-image: url('Board.png'); 
+    background-size: cover;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-size: cover;
+}
+
+.yarn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.yarn.red {
+    background-image: url('Kırmızı.png'); 
+}
+
+.yarn.blue {
+    background-image: url('Mavi.png'); 
+}
+
+.yarn.yellow {
+    background-image: url('Sarı.png'); 
+}
+
+.cards {
+    width: 120px;
+    height: 165px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.control-btn {
+    pointer-events: all;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.control-btn[data-direction="right"] {
+    left: -30px;
+}
+
+.control-btn[data-direction="left"] {
+    right: -30px;
+}
+
+.control-btn[data-direction="down"] {
+    top: -30px;
+}
+
+.control-btn[data-direction="up"] {
+    bottom: -30px;
+}
+
+.control-btn[data-row="0"] {
+    top: 10px;
+}
+
+.control-btn[data-row="1"] {
+    top: 115px;
+}
+
+.control-btn[data-row="2"] {
+    top: 220px;
+}
+
+.control-btn[data-col="0"] {
+    left: 10px;
+}
+
+.control-btn[data-col="1"] {
+    left: 115px;
+}
+
+.control-btn[data-col="2"] {
+    left: 220px;
+}
+
+#draw-yarn-btn {
+    position: absolute;
+    left: 100px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 24px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+#drawn-yarn-container {
+    margin-top: 100px;
+    height: 80px;
+}
+
+.cards.Card_Yellow_C {
+    background-image: url('Card_Yellow_C.png'); 
+}
+
+.cards.Card_Yellow_Dia {
+    background-image: url('Card_Yellow_Dia.png'); 
+}
+
+.cards.Card_Yellow_I {
+    background-image: url('Card_Yellow_I.png'); 
+}
+
+.cards.Card.Card_Yellow_J {
+    background-image: url('Card_Yellow_J.png'); 
+}
+
+.cards.Card_Yellow_L {
+    background-image: url('Card_Yellow_L.png'); 
+}
+
+.cards.Card_Yellow_O {
+    background-image: url('Card_Yellow_O.png'); 
+}
+
+.cards.Card_Yellow_T {
+    background-image: url('Card_Yellow_T.png'); 
+}
+
+.cards.Card_Yellow_S {
+    background-image: url('Card_Yellow_S.png'); 
+}
+
+.cards.Card_Yellow_Z {
+    background-image: url('Card_Yellow_Z.png'); 
+}
+
+.cards.Card_Blue_C {
+    background-image: url('Card_Blue_C.png'); 
+}
+
+.cards.Card_Blue_Dia {
+    background-image: url('Card_Blue_Dia.png'); 
+}
+
+.cards.Card_Blue_I {
+    background-image: url('Card_Blue_I.png'); 
+}
+
+.cards.Card_Blue_J {
+    background-image: url('Card_Blue_J.png'); 
+}
+
+.cards.Card_Blue_L {
+    background-image: url('Card_Blue_L.png'); 
+}
+
+.cards.Card_Blue_O {
+    background-image: url('Card_Blue_O.png'); 
+}
+
+.cards.Card_Blue_T {
+    background-image: url('Card_Blue_T.png'); 
+}
+
+.cards.Card_Blue_S {
+    background-image: url('Card_Blue_S.png'); 
+}
+
+.cards.Card_Blue_Z {
+    background-image: url('Card_Blue_Z.png'); 
+}
+
+.cards.Card_Red_C {
+    background-image: url('Card_Red_C.png'); 
+}
+
+.cards.Card_Red_Dia {
+    background-image: url('Card_Red_Dia.png'); 
+}
+
+.cards.Card_Red_I {
+    background-image: url('Card_Red_I.png'); 
+}
+
+.cards.Card_Red_J {
+    background-image: url('Card_Red_J.png'); 
+}
+
+.cards.Card_Red_L {
+    background-image: url('Card_Red_L.png'); 
+}
+
+.cards.Card_Red_O {
+    background-image: url('Card_Red_O.png'); 
+}
+
+.cards.Card_Red_T {
+    background-image: url('Card_Red_T.png'); 
+}
+
+.cards.Card_Red_S {
+    background-image: url('Card_Red_S.png'); 
+}
+
+.cards.Card_Red_Z {
+    background-image: url('Card_Red_Z.png'); 
+}
